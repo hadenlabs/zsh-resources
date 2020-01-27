@@ -9,21 +9,39 @@
 #
 
 # shellcheck disable=SC2034  # Unused variables left for readability
-RESOURCES_ROOT=$(RESOURCES root)
+RESOURCES_ROOT_DIR=$(dirname "${0}")
 RESOURCES_SRC_DIR="${RESOURCES_ROOT_DIR}"/src
+RESOURCES_ASSETS_DIR="${RESOURCES_ROOT_DIR}"/assets
+RESOURCES_ASSETS_FONTS_DIR="${RESOURCES_ASSETS_DIR}"/fonts
 
 resources_package_name='resources'
+
+function resources::path::linux {
+    # shellcheck source=/dev/null
+    source "${RESOURCES_SRC_DIR}"/linux.zsh
+}
+
+function resources::path::osx {
+    # shellcheck source=/dev/null
+    source "${RESOURCES_SRC_DIR}"/osx.zsh
+}
+
+function resources::path::factory {
+    case "${OSTYPE}" in
+        darwin*)
+            resources::path::osx
+            ;;
+        linux*)
+            resources::path::linux
+            ;;
+    esac
+}
+
 
 # shellcheck source=/dev/null
 source "${RESOURCES_SRC_DIR}"/base.zsh
 
-function resources::dependences::check {
-    if ! type -p async_init > /dev/null; then
-        message_warning "is neccesary implement async_init."
-    fi
-    if [ -z "${GITHUB_USER}" ]; then
-        message_warning "You should set 'git config --global github.user'."
-    fi
-}
+resources::path::factory
 
-resources::dependences::check
+# shellcheck source=/dev/null
+source "${RESOURCES_SRC_DIR}"/fonts.zsh
