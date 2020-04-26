@@ -41,6 +41,9 @@ function resources::path::factory {
 # shellcheck source=/dev/null
 source "${RESOURCES_SRC_DIR}"/base.zsh
 
+# shellcheck source=/dev/null
+source "${RESOURCES_SRC_DIR}"/utils.zsh
+
 resources::path::factory
 
 # shellcheck source=/dev/null
