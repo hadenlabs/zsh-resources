@@ -13,8 +13,9 @@ RESOURCES_ROOT_DIR=$(dirname "${0}")
 RESOURCES_SRC_DIR="${RESOURCES_ROOT_DIR}"/src
 RESOURCES_ASSETS_DIR="${RESOURCES_ROOT_DIR}"/assets
 RESOURCES_ASSETS_FONTS_DIR="${RESOURCES_ASSETS_DIR}"/fonts
+RESOURCES_ASYNC_NAME="resources_worker"
 
-resources_package_name='resources'
+export RESOURCES_PACKAGE_NAME='resources'
 
 function resources::path::linux {
     # shellcheck source=/dev/null
@@ -43,6 +44,9 @@ source "${RESOURCES_SRC_DIR}"/base.zsh
 
 # shellcheck source=/dev/null
 source "${RESOURCES_SRC_DIR}"/utils.zsh
+
+# shellcheck source=/dev/null
+source "${RESOURCES_SRC_DIR}"/async.zsh
 
 resources::path::factory
 
