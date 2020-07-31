@@ -10,7 +10,7 @@
 
 # shellcheck disable=SC2034  # Unused variables left for readability
 RESOURCES_ROOT_DIR=$(dirname "${0}")
-RESOURCES_SRC_DIR="${RESOURCES_ROOT_DIR}"/src
+RESOURCES_SRC_DIR="${RESOURCES_ROOT_DIR}"/pkg
 RESOURCES_ASSETS_DIR="${RESOURCES_ROOT_DIR}"/assets
 RESOURCES_ASSETS_FONTS_DIR="${RESOURCES_ASSETS_DIR}"/fonts
 RESOURCES_ASYNC_NAME="resources_worker"
