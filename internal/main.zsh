@@ -18,4 +18,4 @@ function resources::internal::main::factory {
 
 resources::internal::main::factory
 
-if ! type -p rsync > /dev/null; then resources::internal::rync::install; fi
+if ! core::exists rsync; then core::install rsync; fi
