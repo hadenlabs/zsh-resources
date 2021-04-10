@@ -1,0 +1,56 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: zsh-resources
+
+email:
+  support: support@hadenlabs.com
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: 'LGPL-3.0'
+
+# Canonical GitHub repo
+github_repo: hadenlabs/zsh-resources
+
+# Badges to display
+badges:
+  - name: GitHub tag (latest SemVer)
+    image: https://img.shields.io/github/v/tag/hadenlabs/zsh-resources.svg?label=latest&sort=semver
+    url: https://github.com/hadenlabs/zsh-resources/releases
+  - name: Lint
+    image: https://github.com/hadenlabs/zsh-resources/actions/workflows/lint.yml/badge.svg?branch=develop
+    url: https://github.com/hadenlabs/zsh-resources/actions
+  - name: Issues
+    image: https://img.shields.io/github/issues/hadenlabs/zsh-resources.svg
+    url: https://github.com/hadenlabs/zsh-resources/issues
+  - name: Latest Release
+    image: https://img.shields.io/github/release/hadenlabs/zsh-resources.svg
+    url: https://github.com/hadenlabs/zsh-resources/releases
+  - name: Beacon
+    image: https://ga-beacon.appspot.com/G-MZEK48EGE8/zsh-resources/readme
+    url: https://github.com/hadenlabs/zsh-resources
+
+# Short description of this project
+description: |-
+  zsh-resources for zsh plugin
+
+requirements: |-
+
+  This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
+
+  * [zsh-core](https://github.com/hadenlabs/zsh-core)
+
+installation:
+  - 'docs/include/installation/oh-my-zsh.md'
+  - 'docs/include/installation/antigen.md'
+  - 'docs/include/installation/antibody.md'
+
+include:
+  - 'docs/functions.md'
