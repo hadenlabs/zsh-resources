@@ -168,7 +168,7 @@ title = "gitleaks config"
 [allowlist]
     description = "files allowlists"
     files = [
-      '''(.*?)(jpg|gif|doc|pdf|bin)$''',
+      '''(.*?)(jpg|gif|doc|pdf|bin|mp3|mp4|mov|ttf|woff|woff2)$''',
       '''^\.gitignore$''',
       '''^\.gitleaks.toml$''',
       '''^yarn.lock$''',
