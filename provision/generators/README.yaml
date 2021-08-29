@@ -21,21 +21,21 @@ github_repo: hadenlabs/zsh-resources
 
 # Badges to display
 badges:
-  - name: GitHub tag (latest SemVer)
-    image: https://img.shields.io/github/v/tag/hadenlabs/zsh-resources?label=latest&sort=semver
-    url: https://github.com/hadenlabs/zsh-resources/releases
-  - name: Lint
-    image: https://img.shields.io/github/workflow/status/hadenlabs/zsh-resources/lint-code
-    url: https://github.com/hadenlabs/zsh-resources/actions
-  - name: Issues
-    image: https://img.shields.io/github/issues/hadenlabs/zsh-resources
-    url: https://github.com/hadenlabs/zsh-resources/issues
   - name: Latest Release
     image: https://img.shields.io/github/release/hadenlabs/zsh-resources
     url: https://github.com/hadenlabs/zsh-resources/releases
-  - name: Beacon
-    image: https://ga-beacon.appspot.com/G-MZEK48EGE8/zsh-resources/readme
-    url: https://github.com/hadenlabs/zsh-resources
+  - name: Lint
+    image: https://img.shields.io/github/workflow/status/hadenlabs/zsh-resources/lint-code
+    url: https://github.com/hadenlabs/zsh-resources/actions?workflow=lint-code
+  - name: pre-commit
+    image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+    url: https://github.com/pre-commit/pre-commit
+  - name: Conventional Commits
+    image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
+    url: https://conventionalcommits.org
+  - name: KeepAChangelog
+    image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
+    url: https://keepachangelog.com
 
 description: |-
   zsh-resources for zsh plugin
