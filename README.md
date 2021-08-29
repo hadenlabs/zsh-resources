@@ -15,10 +15,11 @@
  
 
 # zsh-resources
- [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hadenlabs/zsh-resources?label=latest&sort=semver)](https://github.com/hadenlabs/zsh-resources/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/zsh-resources/lint-code)](https://github.com/hadenlabs/zsh-resources/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/zsh-resources)](https://github.com/hadenlabs/zsh-resources/issues) [![Latest Release](https://img.shields.io/github/release/hadenlabs/zsh-resources)](https://github.com/hadenlabs/zsh-resources/releases) [![Beacon](https://ga-beacon.appspot.com/G-MZEK48EGE8/zsh-resources/readme)](https://github.com/hadenlabs/zsh-resources)
+ [![Latest Release](https://img.shields.io/github/release/hadenlabs/zsh-resources)](https://github.com/hadenlabs/zsh-resources/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/zsh-resources/lint-code)](https://github.com/hadenlabs/zsh-resources/actions?workflow=lint-code) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
+
+# zsh-resources
 
  zsh-resources for zsh plugin 
-
 
 
 
