@@ -10,6 +10,10 @@ name: zsh-resources
 email:
   support: support@hadenlabs.com
 
+confluence:
+  space: ZshResources
+  title: Project
+
 # Logo for this project
 #logo: docs/logo.png
 
@@ -33,18 +37,18 @@ badges:
   - name: Conventional Commits
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
-  - name: KeepAChangelog
-    image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
-    url: https://keepachangelog.com
-
-description: |-
-  zsh-resources for zsh plugin
 
 requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
   * [zsh-core](https://github.com/hadenlabs/zsh-core)
+  - [python](https://www.python.org)
+  - [taskfile](https://github.com/go-task/task)
+
+# Short description of this project
+description: |-
+  zsh-resources for project
 
 installation:
   - 'docs/include/installation/oh-my-zsh.md'
