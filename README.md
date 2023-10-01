@@ -1,6 +1,3 @@
- <!-- Space: ZshResources -->
-<!-- Title: Project -->
-
 <!--
 
 
@@ -15,7 +12,7 @@
 
   -->
 
-[![Latest Release](https://img.shields.io/github/release/hadenlabs/zsh-resources)](https://github.com/hadenlabs/zsh-resources/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/zsh-resources/lint-code)](https://github.com/hadenlabs/zsh-resources/actions?workflow=lint-code) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org)
+[![Latest Release](https://img.shields.io/github/release/hadenlabs/zsh-resources)](https://github.com/hadenlabs/zsh-resources/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/zsh-resources/lint-code)](https://github.com/hadenlabs/zsh-resources/actions?workflow=lint-code) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
 
 # zsh-resources
 
@@ -26,16 +23,15 @@ zsh-resources for project
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
 - [zsh-core](https://github.com/hadenlabs/zsh-core)
-
-* [python](https://www.python.org)
-* [taskfile](https://github.com/go-task/task)
+- [gomplate](https://github.com/hairyhenderson/gomplate)
+- [python](https://www.python.org)
+- [taskfile](https://github.com/go-task/task)
 
 ## Installation
 
-<!-- Space: ZshResources -->
-<!-- Parent: Project -->
-<!-- Title: Project Installation Oh-My-Zsh -->
-
+<!-- Space: Projects -->
+<!-- Parent: ZshResources -->
+<!-- Title: Installation Oh-My-Zsh ZshResources -->
 <!-- Label: ZshResources -->
 <!-- Label: Project -->
 <!-- Label: Installation -->
@@ -43,24 +39,23 @@ This is a list of plugins that need to be installed previously to enjoy all the 
 <!-- Include: docs/disclaimer.md -->
 <!-- Include: ac:toc -->
 
-### [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) users
+### [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) users
 
-If you're using [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), install this plugin by doing the following:
+If you're using [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh), install this plugin by doing the following:
 
 1.  Go to your oh-my-zsh custom plugins directory -`cd ~/.oh-my-zsh/custom/plugins`
 2.  Clone the plugin `bash git clone https://github.com/hadenlabs/zsh-resources`bash
 3.  Edit your `.zshrc` and add `plugins=( ... zsh-resources )` to your list of plugins
 4.  Open a new terminal and enjoy!
-    <!-- Space: ZshResources -->
-    <!-- Parent: Project -->
-    <!-- Title: Project Installation Antigen -->
-
-<!-- Label: ZshResources -->
-<!-- Label: Project -->
-<!-- Label: Installation -->
-<!-- Label: Antigen -->
-<!-- Include: docs/disclaimer.md -->
-<!-- Include: ac:toc -->
+    <!-- Space: Projects -->
+    <!-- Parent: ZshResources -->
+    <!-- Title: Installation Antigen ZshResources -->
+    <!-- Label: ZshResources -->
+    <!-- Label: Project -->
+    <!-- Label: Installation -->
+    <!-- Label: Antigen -->
+    <!-- Include: docs/disclaimer.md -->
+    <!-- Include: ac:toc -->
 
 ### [antigen](https://github.com/zsh-users/antigen) users
 
@@ -69,15 +64,14 @@ If you're using [Antigen](https://github.com/zsh-users/antigen), install this pl
 1.  Add `antigen bundle hadenlabs/zsh-resources` to your `.zshrc` where you're adding your other plugins.
 2.  Either open a new terminal to force zsh to load the new plugin, or run `antigen bundle hadenlabs/zsh-resources` in a running zsh session.
 3.  Enjoy!
-    <!-- Space: ZshResources -->
-    <!-- Parent: Project -->
-    <!-- Title: Project Installation Antibody -->
-
-<!-- Label: ZshResources -->
-<!-- Label: Project -->
-<!-- Label: Installation -->
-<!-- Include: docs/disclaimer.md -->
-<!-- Include: ac:toc -->
+    <!-- Space: Projects -->
+    <!-- Parent: ZshResources -->
+    <!-- Title: Installation Antibody ZshResources -->
+    <!-- Label: ZshResources -->
+    <!-- Label: Project -->
+    <!-- Label: Installation -->
+    <!-- Include: docs/disclaimer.md -->
+    <!-- Include: ac:toc -->
 
 ### [antibody](https://github.com/getantibody/antibody) users
 
@@ -94,15 +88,47 @@ to your `.zshrc` where you're adding your other plugins.
 2.  Either open a new terminal to force zsh to load the new plugin, or run `antibody bundle hadenlabs/zsh-resources` in a running zsh session.
 3.  Enjoy!
 
- <!-- Space: ZshResources -->
-<!-- Parent: Project -->
-<!-- Title: Functions -->
+## Usage
 
+# How to use this project
+
+```bash
+task setup
+```
+
+## Examples
+
+<!-- Space: Projects -->
+<!-- Parent: ZshResources -->
+<!-- Title: Examples ZshResources -->
+<!-- Label: Examples -->
+<!-- Include: ./../disclaimer.md -->
+<!-- Include: ac:toc -->
+
+### Common
+
+ <!-- Space: Projects -->
+<!-- Parent: ZshResources -->
+<!-- Title: Functions ZshResources -->
 <!-- Label: Functions -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 ## Functions
+
+zsh pyenv includes a small utility `pyenv`.
+
+#### `pyenv::post_install`
+
+Synchronizes and install configurations.
+
+#### `pyenv::install`
+
+Install pyenv
+
+#### `pyenv::module::install` `name module`
+
+Install module using python now version
 
 ## Help
 
@@ -131,7 +157,7 @@ Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following co
 
 ## Copyright
 
-Copyright © 2018-2022 [Hadenlabs](https://hadenlabs.com)
+Copyright © 2018-2023 [Hadenlabs](https://hadenlabs.com)
 
 ## Trademarks
 
