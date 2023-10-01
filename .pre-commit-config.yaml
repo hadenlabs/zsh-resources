@@ -48,6 +48,10 @@ repos:
       - id: check-merge-conflict
       - id: check-added-large-files
         files: ^tf|-|\.(py|env|yml|yaml)$
+        exclude: >
+          (?x)^(
+            assets/fonts\/.*$|
+          )$
       - id: check-case-conflict
       - id: check-json
       - id: check-xml
