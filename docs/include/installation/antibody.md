@@ -1,7 +1,6 @@
-<!-- Space: ZshResources -->
-<!-- Parent: Project -->
-<!-- Title: Project Installation Antibody -->
-
+<!-- Space: Projects -->
+<!-- Parent: ZshResources -->
+<!-- Title: Installation Antibody ZshResources -->
 <!-- Label: ZshResources -->
 <!-- Label: Project -->
 <!-- Label: Installation -->
