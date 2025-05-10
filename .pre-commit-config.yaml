@@ -58,6 +58,7 @@ repos:
         exclude: >
           (?x)^(
             assets/fonts\/.*$|
+            assets/images/wallpapers\/.*$|
           )$
       - id: check-case-conflict
       - id: check-json
