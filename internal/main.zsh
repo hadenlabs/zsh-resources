@@ -14,6 +14,8 @@ function resources::internal::main::factory {
         source "${ZSH_RESOURCES_PATH}"/internal/linux.zsh
       ;;
     esac
+    # shellcheck source=/dev/null
+    source "${ZSH_RESOURCES_PATH}"/internal/helper.zsh
 }
 
 resources::internal::main::factory

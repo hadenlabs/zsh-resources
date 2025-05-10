@@ -1,7 +1,7 @@
 <!-- Space: Projects -->
 <!-- Parent: ZshResources -->
-<!-- Title: Contributing GithubFlow BaseTemplate -->
-<!-- Label: BaseTemplate -->
+<!-- Title: Contributing GithubFlow ZshResources -->
+<!-- Label: ZshResources -->
 <!-- Label: Project -->
 <!-- Label: Contributing -->
 <!-- Label: GithubFlow -->
