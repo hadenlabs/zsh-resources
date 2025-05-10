@@ -23,7 +23,7 @@
     "ncu": "ncu -u --target minor",
     "ncu:patch": "ncu -u --target patch",
     "prebuild": "mkdirp build && yarn run clean:build:all",
-    "prettier": "prettier --config=.ci/linters/prettier.config.js --ignore-path=.ci/linters/.prettierignore --list-different",
+    "prettier": "prettier --config=.ci/linters/prettier.config.cjs --ignore-path=.ci/linters/.prettierignore --list-different",
     "prettier:fix": "yarn prettier:lint --write=true",
     "prettier:lint": "yarn prettier '**/*.{js?(on),ts?(x),scss,md,y?(a)ml,gql,graphql?(s),less,mjml}' --write=false"
   },
@@ -62,5 +62,5 @@
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   },
-  "prettier": "./.ci/linters/prettier.config.js"
+  "prettier": "./.ci/linters/prettier.config.cjs"
 }
